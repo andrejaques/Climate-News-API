@@ -77,7 +77,7 @@ const getNews = ((topic) => {
 getNews(newspapers);
 
 app.get('/', (req, res) => {
-    res.json('Welcome to my Climate Change News API');
+    res.json('Welcome to my Climate Change News API. To receive news, use get in /news. To receive specific news, use get in /news/:newspaperName');
 });
 
 app.get('/news', (req , res) => {
